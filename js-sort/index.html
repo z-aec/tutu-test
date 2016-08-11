@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестовое задание</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>	
+	<div id="loader" style="display:none;">
+		<div class="loader-bg"></div>
+		<div class="loader-info"><img src="ajax-loader.gif">Загрузка</div>
+	</div>
+	<div id="task">
+		<div>
+			<a href="javascript://" class="btn load" data-load="small">Загрузить маленький объём</a>
+			<a href="javascript://" class="btn load" data-load="big">Загрузить большой объём</a>
+			<form class="search"><input type="text" class="search-field" placeholder="Поиск..."><input class="btn" type="submit" value="Поиск"></form>
+		</div>
+		<div>
+			<table class="main" width="99%" cellspacing="1">
+				<thead>
+					<tr>
+						<th data-name="id">id<i class="sort asc"></i></th>
+						<th data-name="firstName">Имя<i class="sort"></i></th>
+						<th data-name="lastName">Фамилия<i class="sort"></i></th>
+						<th data-name="email">email<i class="sort"></i></th>
+						<th data-name="phone">Телефон<i class="sort"></i></th>
+					</tr>
+				</thead>
+				<tbody class="data">
+					
+				</tbody>
+			</table>
+			<ul class="uinfo" style="display:none;">
+				<li>Выбран пользователь <b><span class="ui-field" data-name="firstName"></span> <span class="ui-field" data-name="lastName"></span></b></li>
+				<li>Описание:<br><textarea class="ui-field" data-name="description" data-ref="value" cols="80" rows="4"></textarea></li>
+				<li>Адрес проживания: <b><span class="ui-field" data-name="adress" data-subname="streetAddress"></span></b></li>
+				<li>Город: <b><span class="ui-field" data-name="adress" data-subname="city"></span></b></li>
+				<li>Провинция/штат: <b><span class="ui-field" data-name="adress" data-subname="state"></span></b></li>
+				<li>Индекс: <b><span class="ui-field" data-name="adress" data-subname="zip"></span></b></li>
+			</ul>
+			<ul class="pagination pages"></ul>
+		</div>
+	</div>
+</body>
+</html>

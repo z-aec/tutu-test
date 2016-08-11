@@ -1,0 +1,231 @@
+body{
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+hr{
+    border: none;
+    border-top: 1px solid gray;
+}
+.container{
+    max-width: 1024px;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 0;
+}
+.header{
+    max-width: 760px;
+    padding: 10px;
+    margin-left: 240px;
+}
+.info{
+    max-width: 200px;
+    padding: 10px;
+    float:left;
+    text-align: left;
+}
+.content{
+    max-width: 760px;
+    padding: 10px;
+    margin-left: 240px;
+}
+.menu{
+    list-style: none;
+    padding: 25px 15px 40px 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.menu li{
+    padding-right: 40px;
+    float: left;
+    font-size: 16px;
+}
+.purple{
+    color: #a0a;
+}
+.green{
+    color: #0a0;
+}
+.blue{
+    color: #0af;
+}
+.orange{
+    color: #f80;
+}
+.gray{
+    color: #333;
+}
+.red{
+    color: #a00;
+}
+.title h1{
+    float: left;
+    padding-right: 10px;
+    max-width: 250px;
+}
+.title span{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    width: 500px;
+}
+.subtitle h2{
+    float: left;
+    padding-right: 10px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 14px;
+}
+.subtitle span{
+    display: block;
+    position: relative;
+    top: 20px;
+    margin-bottom: 40px;
+}
+.steps{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.steps li{
+    margin: 0;
+    float: left;
+    width: 95px;
+    padding: 2px;
+    margin-right: 1px;
+    text-align: center;
+    background-color: #feb;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.4);
+}
+.steps .completed{
+    background-color: #0c0;
+    background: linear-gradient(to top, #0c0, #0a0);
+    box-shadow: none;
+    color: white;
+}
+.steps .active{
+    background-color: #af0;
+    background: linear-gradient(to top, #af0, #8f0);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    font-weight: bold;
+}
+.steps .first{
+    border-radius: 5px 0 0 5px;
+}
+.steps .last{
+    border-radius: 0 5px 5px 0;
+}
+.col{
+    width: 240px;
+    height: 60px;
+    margin: 1px;
+    padding: 5px;
+    float: left;
+}
+.col-justify{
+    width: 100%;
+}
+.col label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.col .text-input{
+    width: 200px;
+}
+.col-justify .text-input{
+    width: 95%;
+}
+.col .text-select{
+    width: 205px;
+}
+.col .radio-input{
+    display: none;
+}
+.col .radio-input-label{
+    font-weight: normal;
+    padding: 3px 10px 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.col .radio-input-label span{
+    border-bottom: 1px dashed black;
+}
+.col > .radio-input:checked + .radio-input-label{
+    border: none;
+    background-color: #cf0;
+    border-radius: 10px;
+}
+.col > .radio-input:checked + .radio-input-label span{
+    border: none;
+}
+.col .hint{
+    color: gray;
+    font-size: 10px;
+    margin-top: 5px;
+}
+.footer{
+    display: inline-block;
+    width: 95%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #eee;
+}
+.footer .btn{
+    border: none;
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+.footer .btn-back{
+    float: left;
+    background-color: gray;
+    background: linear-gradient(to top, #aaa, #ccc);
+}
+.footer .btn-next{
+    float: right;
+    background-color: #af0;
+    background: linear-gradient(to top, #af0, #cf0);
+}
+@media (max-width: 1023px) {
+    body{
+        width: 99%;
+    }
+    .menu{
+        padding: 25px 15px 40px 15px;
+    }
+    .menu li{
+        padding-right: 8px;
+    }
+    .title span{
+        width: 200px;
+    }
+    .title span li{
+        width: 35px;
+    }
+}
+@media (max-width: 800px) {
+    .header, .content, .info{
+        margin-left: 0;
+        max-width: 800px;
+    }
+    .info, .menu li{
+        float: none;
+    }
+    .menu li{
+        padding: 8px 0 8px 0;
+    }
+    .col, .col .text-select, .col .text-input{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,135 @@
+body{
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    width: 99%;
+}
+.btn{
+    background: #0af;
+    border: 1px solid #08f;
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
+    line-height: 100%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+.btn::-moz-focus-inner{
+    padding:0;
+    border:0
+}
+.btn:hover{
+    background: #08f;
+}
+.btn-small{
+    padding: 5px;
+    font-size: 10px;
+}
+.btn-middle{
+    padding: 7px;
+    font-size: 12px;
+}
+.btn-large{
+    padding: 14px;
+    font-size: 18px;
+}
+.btn-red{
+    background: #a00;
+    border: 1px solid #700;
+    color: white;
+}
+.btn-red:hover{
+    background: #700;
+}
+.btn-white{
+    background: #fff;
+    border: 1px solid #ccc;
+    color: black;
+}
+.btn-white:hover{
+    background: #ccc;
+}
+.search{
+    display: inline-block;
+}
+.search-field{
+    padding: 8px;
+    width: 300px;
+}
+.loader-bg{
+    position: fixed;
+    background-color: black;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+.loader-info{
+    z-index: 1001;
+    position: fixed;
+    background-color: white;
+    top: 40%;
+    left: 49%;
+    padding: 10px;
+}
+.main{
+    background-color: black;
+    padding: 0;
+    margin-top: 5px;
+}
+.main th, .main td{
+    background-color: white;
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+.main tr:hover > td{
+    background-color: #fda;
+}
+.uinfo{
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+}
+.pagination{
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+.pagination li{
+    display: inline-block;
+    border: 1px solid gray;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+.pagination li:hover{
+    background-color: #fda;
+}
+.page-active{
+    font-weight: bold;
+    background-color: #ccc;
+}
+.page-active:hover{
+    background-color: transparent;
+}
+.sort{
+    font-style: normal;
+}
+.asc:after{
+    content: "\25bc";
+    color: green;
+}
+.desc:after{
+    content: "\25b2";
+    color: red;
+}

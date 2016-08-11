@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="menu">
+                <li><a href=# class="purple">Личный кабинет</a></li>
+                <li><a href=# class="green">Раздел 1</a></li>
+                <li><a href=# class="blue">Раздел 2</a></li>
+                <li><a href=# class="orange">Раздел 3</a></li>
+                <li><a href=# class="gray">Раздел 4</a></li>
+                <li><a href=# class="red">Раздел 5</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <p>&#9728; TutuRu &mdash; крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+            <p>Наша цель проста &mdash; делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.</p>
+        </div>
+        <div class="content">
+            <div class="title">
+                <h1>Заполните форму</h1>
+                <span>
+                    <ul class="steps">
+                        <li class="completed first">1</li>
+                        <li class="completed">2</li>
+                        <li class="active">3</li>
+                        <li>4</li>
+                        <li class="last">5</li>
+                    </ul>
+                </span>
+            </div>
+            <div class="subtitle">
+                <h2>Общая информация</h2>
+                <span><hr></span>
+            </div>
+            <form action="#">
+                <div class="col"><label>Фамилия</label><input type="text" class="text-input" name="last_name"></div>
+                <div class="col"><label>Имя</label><input type="text" class="text-input" name="first_name"></div>
+                <div class="col"><label>Отчество</label><input type="text" class="text-input" name="patronymic"></div>
+                <div class="col">
+                    <label>Меняли фамилию?</label>
+                    <input type="radio" name="change_last_name" value="1" class="radio-input" id="change_last_name_yes">
+                    <label for="change_last_name_yes" class="radio-input-label"><span>Да</span></label>
+                    <input type="radio" name="change_last_name" value="0" class="radio-input" id="change_last_name_no" checked>
+                    <label for="change_last_name_no" class="radio-input-label"><span>Нет</span></label>
+                </div>
+                <div class="col">
+                    <label>Пол</label>
+                    <input type="radio" name="gender" value="0" class="radio-input" id="gender_male" checked>
+                    <label for="gender_male" class="radio-input-label"><span>Муж</span></label>
+                    <input type="radio" name="gender" value="1" class="radio-input" id="gender_female">
+                    <label for="gender_female" class="radio-input-label"><span>Жен</span></label>
+                </div>
+                <div class="col">
+                    <label>Семейное положение</label>
+                    <select class="text-select" name="relation">
+                        <option value="0">Не женат/Не замужем</option>
+                        <option value="1">Женат/Замужем</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label>Гражданство</label>
+                    <select class="text-select" name="citizenship">
+                        <option value="ru">Российская Федерация</option>
+                        <option value="ua">Украина</option>
+                        <option value="by">Беларусь</option>
+                        <option value="kz">Казахстан</option>
+                        <option value="etc">Другое</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label>Дата рождения</label>
+                    <select name="bdate-day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="bdate-month">
+                        <option value="1">Января</option>
+                        <option value="2">Февраля</option>
+                        <option value="3">Марта</option>
+                        <option value="4">Апреля</option>
+                        <option value="5">Мая</option>
+                        <option value="6">Июня</option>
+                        <option value="7">Июля</option>
+                        <option value="8">Августа</option>
+                        <option value="9">Сентября</option>
+                        <option value="10">Октября</option>
+                        <option value="11">Ноября</option>
+                        <option value="12">Декабря</option>
+                    </select>
+                    <select name="bdate-year">
+                        <option value="1900">1900</option>
+                        <option value="1901">1901</option>
+                        <option value="1902">1902</option>
+                        <option value="1903">1903</option>
+                        <option value="1904">1904</option>
+                        <option value="1905">1905</option>
+                        <option value="1906">1906</option>
+                        <option value="1907">1907</option>
+                        <option value="1908">1908</option>
+                        <option value="1909">1909</option>
+                        <option value="1910">1910</option>
+                        <option value="1911">1911</option>
+                        <option value="1912">1912</option>
+                        <option value="1913">1913</option>
+                        <option value="1914">1914</option>
+                        <option value="1915">1915</option>
+                        <option value="1916">1916</option>
+                        <option value="1917">1917</option>
+                        <option value="1918">1918</option>
+                        <option value="1919">1919</option>
+                        <option value="1920">1920</option>
+                        <option value="1921">1921</option>
+                        <option value="1922">1922</option>
+                        <option value="1923">1923</option>
+                        <option value="1924">1924</option>
+                        <option value="1925">1925</option>
+                        <option value="1926">1926</option>
+                        <option value="1927">1927</option>
+                        <option value="1928">1928</option>
+                        <option value="1929">1929</option>
+                        <option value="1930">1930</option>
+                        <option value="1931">1931</option>
+                        <option value="1932">1932</option>
+                        <option value="1933">1933</option>
+                        <option value="1934">1934</option>
+                        <option value="1935">1935</option>
+                        <option value="1936">1936</option>
+                        <option value="1937">1937</option>
+                        <option value="1938">1938</option>
+                        <option value="1939">1939</option>
+                        <option value="1940">1940</option>
+                        <option value="1941">1941</option>
+                        <option value="1942">1942</option>
+                        <option value="1943">1943</option>
+                        <option value="1944">1944</option>
+                        <option value="1945">1945</option>
+                        <option value="1946">1946</option>
+                        <option value="1947">1947</option>
+                        <option value="1948">1948</option>
+                        <option value="1949">1949</option>
+                        <option value="1950">1950</option>
+                        <option value="1951">1951</option>
+                        <option value="1952">1952</option>
+                        <option value="1953">1953</option>
+                        <option value="1954">1954</option>
+                        <option value="1955">1955</option>
+                        <option value="1956">1956</option>
+                        <option value="1957">1957</option>
+                        <option value="1958">1958</option>
+                        <option value="1959">1959</option>
+                        <option value="1960">1960</option>
+                        <option value="1961">1961</option>
+                        <option value="1962">1962</option>
+                        <option value="1963">1963</option>
+                        <option value="1964">1964</option>
+                        <option value="1965">1965</option>
+                        <option value="1966">1966</option>
+                        <option value="1967">1967</option>
+                        <option value="1968">1968</option>
+                        <option value="1969">1969</option>
+                        <option value="1970">1970</option>
+                        <option value="1971">1971</option>
+                        <option value="1972">1972</option>
+                        <option value="1973">1973</option>
+                        <option value="1974">1974</option>
+                        <option value="1975">1975</option>
+                        <option value="1976">1976</option>
+                        <option value="1977">1977</option>
+                        <option value="1978">1978</option>
+                        <option value="1979">1979</option>
+                        <option value="1980">1980</option>
+                        <option value="1981">1981</option>
+                        <option value="1982">1982</option>
+                        <option value="1983">1983</option>
+                        <option value="1984">1984</option>
+                        <option value="1985">1985</option>
+                        <option value="1986">1986</option>
+                        <option value="1987">1987</option>
+                        <option value="1988">1988</option>
+                        <option value="1989">1989</option>
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                    </select>
+                </div>
+                <div class="col col-justify">
+                    <label>Место рождения</label>
+                    <input type="text" class="text-input" name="home_town">
+                    <div class="hint">Например, Россия, Комсомольск-на-Амуре</div>
+                </div>
+                <div class="footer">
+                    <input type="button" class="btn btn-back" value="&larr; Назад">
+                    <input type="submit" class="btn btn-next" value="Далее &rarr;">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
